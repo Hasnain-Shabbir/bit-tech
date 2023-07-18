@@ -1,0 +1,19 @@
+.footerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconList {
+  display: flex;
+  gap: 20px;
+}
+
+.iconList li a {
+  opacity: 0.7;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.iconList li a:hover {
+  opacity: 1;
+}

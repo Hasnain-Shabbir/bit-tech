@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.listWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.list {
+  display: flex;
+  gap: 20px;
+}
+
+.listItem a {
+  padding: 5px;
+}
+
+.logout {
+  background-color: #53c28b;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: #fff;
+}

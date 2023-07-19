@@ -1,0 +1,23 @@
+.blogWrapper {
+  margin: 80px 0;
+}
+
+.blogItem {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 18px;
+  color: #999;
+}

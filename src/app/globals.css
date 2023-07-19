@@ -4,11 +4,6 @@
   margin: 0;
 }
 
-body {
-  background-color: #111;
-  color: #bbb;
-}
-
 a {
   color: #bbb;
   text-decoration: none;
@@ -33,4 +28,18 @@ button {
   padding: 5px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.theme {
+  transition: all 1s ease;
+}
+
+.light {
+  background-color: #fff;
+  color: #111;
+}
+
+.dark {
+  background-color: #111;
+  color: #bbb;
 }

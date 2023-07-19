@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { navData } from "./navData";
+import { DarkModeToggle } from "../../components";
 import styles from "./navbar.module.css";
 
 const Navbar = () => {
@@ -10,6 +11,7 @@ const Navbar = () => {
         bitTech
       </Link>
       <div className={styles.listWrapper}>
+        <DarkModeToggle />
         <ul className={styles.list}>
           {navData.map((data) => (
             <li key={data.id} className={styles.listItem}>

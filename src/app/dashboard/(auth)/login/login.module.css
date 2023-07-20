@@ -1,0 +1,44 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  padding: 20px;
+  background-color: transparent;
+  border: 2px solid #bbb;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #bbb;
+}
+
+.button {
+  padding: 20px;
+  cursor: pointer;
+  background-color: #53c28b;
+  border-radius: 5px;
+  color: #eee;
+  font-weight: bold;
+}
+
+.socialBtn {
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #f3f8f0;
+  border-radius: 5px;
+  color: #111;
+  font-weight: bold;
+}

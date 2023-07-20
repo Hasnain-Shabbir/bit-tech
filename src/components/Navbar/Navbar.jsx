@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className={`container ${styles.navbar}`}>
       <Link href="/" className={styles.logo}>
-        bitTech
+        Bit Tech
       </Link>
       <div className={styles.listWrapper}>
         <DarkModeToggle />

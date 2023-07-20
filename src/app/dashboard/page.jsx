@@ -40,10 +40,18 @@ const Dashboard = () => {
         }),
       });
       mutate();
-      e.target[0].value = "";
-      e.target[1].value = "";
-      e.target[2].value = "";
-      e.target[3].value = "";
+      e.target.reset();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const handleDelete = async (postId) => {
+    try {
+      await fetch(`/api/posts/${postId}`, {
+        method: "DELETE",
+      });
+      mutate();
     } catch (error) {
       console.log(error);
     }
@@ -63,7 +71,12 @@ const Dashboard = () => {
                         <Image src={post.img} alt={post.title} fill={true} />
                       </div>
                       <h2 className={styles.postTitle}>{post.title}</h2>
-                      <span className={styles.delete}>X</span>
+                      <span
+                        className={styles.delete}
+                        onClick={() => handleDelete(post._id)}
+                      >
+                        X
+                      </span>
                     </div>
                   ))}
             </div>
